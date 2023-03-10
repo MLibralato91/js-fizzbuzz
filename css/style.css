@@ -20,17 +20,32 @@ body {
 }
 
 .square-box {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
 }
 
 .square-content {
-    width: 50px;
-    height: 50px;
-    background-color: var(--card-blue);
+  
+    background-color: var(--primary-color);
+    padding: 5px;
 
 }
 
 .square{
     background-color: #f8f8f8;
+    width: 50px;
+    height: 50px;
+    margin:  
+}
+.bg-red{
+    background-color: var(--card-red);
+}
+.bg-yellow{
+    background-color: var(--card-yellow);
+}
+.bg-blue{
+    background-color: var(--card-blue);
+}
+.bg-green{
+    background-color: var(--card-green);
 }

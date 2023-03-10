@@ -25,30 +25,30 @@ for (let i = 1; i <= 100; i++) {
     if (number % 3 === 0 && number % 5 === 0) {
         constNumber = number + "FizzBuzz";
         myTemplate.innerHTML += `<div class="square-content d-flex justify-content-center align-items-center">
-        <div  class="square ">
-            FIZZBUZZ
+        <div  class="square bg-red">
+            fizzBuzz
         </div>  
         </div>`;
 
     } else if (number % 3 === 0) {
         constNumber = number + "Fizz";
         myTemplate.innerHTML += `<div class="square-content d-flex justify-content-center align-items-center">
-        <div  class="square ">
-            FIZZ
+        <div  class="square bg-green">
+            fizz
         </div>  
         </div>`;
 
     } else if (number % 5 === 0) {
         constNumber = number + "Buzz";
         myTemplate.innerHTML += `<div class="square-content d-flex justify-content-center align-items-center">
-        <div  class="square ">
-            BUZZ
+        <div  class="square bg-yellow">
+            buzz
         </div>  
         </div>`;
     } else {
         constNumber = number;
         myTemplate.innerHTML += `<div class="square-content d-flex justify-content-center align-items-center">
-        <div  class="square ">
+        <div  class="square bg-blue">
            ${constNumber}
         </div>  
         </div>`;
