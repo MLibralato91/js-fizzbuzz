@@ -15,25 +15,31 @@ let five = '';
 let constNumber = '';
 for (let i = 1; i <= 100; i++) {
     const number = i;
-    
-    
-    
-    if (number % 3 === 0 && number % 5 === 0){
+
+    let fizzBuzz = document
+
+    if (number % 3 === 0 && number % 5 === 0) {
         constNumber = number + "FizzBuzz";
         
-    }else if (number % 3 === 0){
+
+    } else if (number % 3 === 0) {
         constNumber = number + "Fizz";
-    
-    }else if (number % 5 === 0){
+
+    } else if (number % 5 === 0) {
         constNumber = number + "Buzz";
-    }else{
+    } else {
         constNumber = number;
     }
     console.log(constNumber);
-    }
-    
-    
-    
-//aggiunto number per verificare da console che il risultato sia corretto
-   
+}
 
+
+
+//aggiunto number per verificare da console che il risultato sia corretto
+
+
+`<div class="square-content d-flex justify-content-center align-items-center">
+    <div  class="square ">
+        Ciao
+    </div>  
+</div>`
