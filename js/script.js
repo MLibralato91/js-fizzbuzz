@@ -12,24 +12,28 @@
 let treeAndFive = '';
 let tree = '';
 let five = '';
-
+let constNumber = '';
 for (let i = 1; i <= 100; i++) {
     const number = i;
-    console.log(number);
+    
+    
     
     if (number % 3 === 0 && number % 5 === 0){
-        treeAndFive = number + "FizzBuzz"
-        console.log(treeAndFive);
+        constNumber = number + "FizzBuzz";
+        
+    }else if (number % 3 === 0){
+        constNumber = number + "Fizz";
+    
+    }else if (number % 5 === 0){
+        constNumber = number + "Buzz";
+    }else{
+        constNumber = number;
     }
-    if (number % 3 === 0){
-        tree = number + "Fizz"
-        console.log(tree);
+    console.log(constNumber);
     }
-    if (number % 5 === 0){
-        five = number + "Buzz"
-        console.log(five);
-    }
+    
+    
+    
 //aggiunto number per verificare da console che il risultato sia corretto
    
 
-}
