@@ -15,18 +15,18 @@ for (let i = 0; i <= 100; i++) {
     const number = i;
     
     if (number % 3 === 0 && number % 5 === 0){
-        tree = "Il numero è divisibile per 3 e per 5"
+        tree = number + "Il numero è divisibile per 3 e per 5"
         console.log(tree);
     }
-
     if (number % 3 === 0){
-        tree = "Il numero è divisibile per 3"
+        tree = number + "Il numero è divisibile per 3"
         console.log(tree);
     }
     if (number % 5 === 0){
-        tree = "Il numero è divisibile per 5"
+        tree = number + "Il numero è divisibile per 5"
         console.log(tree);
     }
-    
+//aggiunto number per verificare da console che il risultato sia corretto
+   
 
 }
