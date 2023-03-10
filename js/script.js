@@ -13,14 +13,22 @@ let treeAndFive = '';
 let tree = '';
 let five = '';
 let constNumber = '';
+
+const myTemplate = document.getElementById('mySquare').innerHTML;
+
+
 for (let i = 1; i <= 100; i++) {
     const number = i;
 
-    let fizzBuzz = document
+   
 
     if (number % 3 === 0 && number % 5 === 0) {
         constNumber = number + "FizzBuzz";
-        
+        document.getElementById('mySquare').innerHTML =+ `<div class="square-content d-flex justify-content-center align-items-center">
+        <div  class="square ">
+            Ciao
+        </div>  
+        </div>`;
 
     } else if (number % 3 === 0) {
         constNumber = number + "Fizz";
@@ -34,12 +42,6 @@ for (let i = 1; i <= 100; i++) {
 }
 
 
-
 //aggiunto number per verificare da console che il risultato sia corretto
 
 
-`<div class="square-content d-flex justify-content-center align-items-center">
-    <div  class="square ">
-        Ciao
-    </div>  
-</div>`
