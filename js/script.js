@@ -14,7 +14,7 @@ let tree = '';
 let five = '';
 let constNumber = '';
 
-const myTemplate = document.getElementById('mySquare').innerHTML;
+const myTemplate = document.getElementById('mySquare');
 
 
 for (let i = 1; i <= 100; i++) {
@@ -24,19 +24,34 @@ for (let i = 1; i <= 100; i++) {
 
     if (number % 3 === 0 && number % 5 === 0) {
         constNumber = number + "FizzBuzz";
-        document.getElementById('mySquare').innerHTML =+ `<div class="square-content d-flex justify-content-center align-items-center">
+        myTemplate.innerHTML += `<div class="square-content d-flex justify-content-center align-items-center">
         <div  class="square ">
-            Ciao
+            FIZZBUZZ
         </div>  
         </div>`;
 
     } else if (number % 3 === 0) {
         constNumber = number + "Fizz";
+        myTemplate.innerHTML += `<div class="square-content d-flex justify-content-center align-items-center">
+        <div  class="square ">
+            FIZZ
+        </div>  
+        </div>`;
 
     } else if (number % 5 === 0) {
         constNumber = number + "Buzz";
+        myTemplate.innerHTML += `<div class="square-content d-flex justify-content-center align-items-center">
+        <div  class="square ">
+            BUZZ
+        </div>  
+        </div>`;
     } else {
         constNumber = number;
+        myTemplate.innerHTML += `<div class="square-content d-flex justify-content-center align-items-center">
+        <div  class="square ">
+           ${constNumber}
+        </div>  
+        </div>`;
     }
     console.log(constNumber);
 }
