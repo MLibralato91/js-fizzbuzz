@@ -13,19 +13,20 @@ let treeAndFive = '';
 let tree = '';
 let five = '';
 
-for (let i = 0; i <= 100; i++) {
+for (let i = 1; i <= 100; i++) {
     const number = i;
+    console.log(number);
     
     if (number % 3 === 0 && number % 5 === 0){
-        treeAndFive = number + "Il numero è divisibile per 3 e per 5"
+        treeAndFive = number + "FizzBuzz"
         console.log(treeAndFive);
     }
     if (number % 3 === 0){
-        tree = number + "Il numero è divisibile per 3"
+        tree = number + "Fizz"
         console.log(tree);
     }
     if (number % 5 === 0){
-        five = number + "Il numero è divisibile per 5"
+        five = number + "Buzz"
         console.log(five);
     }
 //aggiunto number per verificare da console che il risultato sia corretto
